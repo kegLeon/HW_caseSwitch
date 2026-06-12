@@ -23,11 +23,11 @@ public class Main {
         }
         //task 3
         int year = 1584;
-        if (year % 4 == 0 && year % 100 != 0) {
+        if (year < 1584) {
             System.out.println("год високосен");
         } else if (year % 400 == 0) {
             System.out.println("год високосен");
-        } else if (year < 1584) {
+        } else if if (year % 4 == 0 && year % 100 != 0) {
             System.out.println("Не можем по календарю судить");
         } else {
             System.out.println("Год не високосен");
@@ -35,12 +35,12 @@ public class Main {
 
 
         //task 4
-        int delivDistance = 100;
-        if (delivDistance <= 20) {
+        int deliveryDistance = 100;
+        if (deliveryDistance <= 20) {
             System.out.println("потребуются сутки");
-        } else if (20 <= delivDistance && delivDistance <= 60) {
+        } else if (20 <= deliveryDistance && deliveryDistance <= 60) {
             System.out.println("Ну двое суток подождите пожалуйста");
-        } else if (61 <= delivDistance && delivDistance <= 100) {
+        } else if (61 <= deliveryDistance && deliveryDistance <= 100) {
             System.out.println("3 суток ожидайте");
         } else {
             System.out.println("Доставки на такие расстояния нет");
