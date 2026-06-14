@@ -2,7 +2,7 @@
 public class Main {
     public static void main(String[] args) {
         //Задание 1
-        int clientOs = 3;
+        int clientOs = 1;
         if (clientOs == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOs == 1) {
@@ -22,13 +22,14 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Яблока по ссылке");
         }
         //task 3
-        int year = 1584;
-        if (year < 1584) {
+        int year = 2023;
+
+        if (year % 400 == 0) {
             System.out.println("год високосен");
-        } else if (year % 400 == 0) {
-            System.out.println("год високосен");
-        } else if if (year % 4 == 0 && year % 100 != 0) {
-            System.out.println("Не можем по календарю судить");
+        } else if (year % 4 == 0 && year % 100 != 0) {
+            System.out.println("Год високосен");
+        } else if (year<1584) {
+            System.out.println("Нельзя определить високосен или нет");
         } else {
             System.out.println("Год не високосен");
         }
@@ -38,9 +39,9 @@ public class Main {
         int deliveryDistance = 100;
         if (deliveryDistance <= 20) {
             System.out.println("потребуются сутки");
-        } else if (20 <= deliveryDistance && deliveryDistance <= 60) {
+        } else if (deliveryDistance <= 60) {
             System.out.println("Ну двое суток подождите пожалуйста");
-        } else if (61 <= deliveryDistance && deliveryDistance <= 100) {
+        } else if (deliveryDistance <= 100) {
             System.out.println("3 суток ожидайте");
         } else {
             System.out.println("Доставки на такие расстояния нет");
